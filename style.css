@@ -46,7 +46,7 @@ header::after {
     bottom: 214px;
     width: 945px;
     left: 0;
-    z-index: 16;
+    z-index: 17;
 }
 
 .mountain-right {
@@ -62,7 +62,7 @@ header::after {
     top: 0;
     width: 1470px;
     height: 610px;
-    z-index: 17;
+    z-index: 16;
 }
 
 nav {
@@ -217,5 +217,17 @@ section .container > *{
 
     .title {
         font-size: 1.2rem;
+    }
+}
+
+@media only screen and (max-height: 1000px) {
+    .sky {
+        height: 800px;
+    }
+}
+
+@media only screen and (min-height: 1000px) {
+    .sky {
+        height: 100%;
     }
 }
