@@ -7,6 +7,11 @@ const section = document.querySelector("section");
 const imgContainer = document.querySelector(".imgContainer");
 const opacity = document.querySelectorAll(".opacity");
 const border = document.querySelector(".border");
+const hamburger = document.querySelector(".hamburger-menu");
+
+hamburger.addEventListener('click', () => {
+    console.log('hello');
+})
 
 
 let headerHeight = header.offsetHeight;
