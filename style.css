@@ -36,7 +36,7 @@ header::after {
 .water {
     position: absolute;
     bottom: 0;
-    width: 1470px;
+    width: 1480px;
     right: 0;
     z-index: 19;
 }
@@ -44,7 +44,7 @@ header::after {
 .mountain-left {
     position: absolute;
     bottom: 214px;
-    width: 945px;
+    width: 948px;
     left: 0;
     z-index: 17;
 }
@@ -52,7 +52,7 @@ header::after {
 .mountain-right {
     position: absolute;
     bottom: 181px;
-    width: 627px;
+    width: 629px;
     right: 0;
     z-index: 18;
 }
@@ -60,7 +60,7 @@ header::after {
 .sky {
     position: absolute;
     top: 0;
-    width: 1470px;
+    width: 1480px;
     height: 610px;
     z-index: 16;
 }
