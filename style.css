@@ -37,23 +37,26 @@ header::after {
 .water {
     position: absolute;
     bottom: 0;
-    width: 1480px;
+    width: 100vw;
+    height: 29vh;
     right: 0;
     z-index: 19;
 }
 
 .mountain-left {
     position: absolute;
-    bottom: 214px;
-    width: 948px;
+    bottom: 155px;
+    width: 68vw;
+    height: 31vh;
     left: 0;
     z-index: 17;
 }
 
 .mountain-right {
     position: absolute;
-    bottom: 181px;
-    width: 629px;
+    bottom: 140px;
+    height: 25vh;
+    width: 43vw;
     right: 0;
     z-index: 18;
 }
@@ -61,8 +64,8 @@ header::after {
 .sky {
     position: absolute;
     top: 0;
-    width: 1480px;
-    height: 610px;
+    width: 100vw;
+    height: 74vh;
     z-index: 16;
 }
 
@@ -153,7 +156,10 @@ a {
 
 .footer-links {
     margin-bottom: 3rem;
-    position: relative;
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 
@@ -240,7 +246,7 @@ section .container > *{
     opacity: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 620px) {
     section .container {
         grid-template-columns: 1fr;
     }
@@ -258,14 +264,51 @@ section .container > *{
     }
 }
 
-@media only screen and (max-height: 1000px) {
-    .sky {
-        height: 800px;
+@media only screen and (max-width: 620px) {
+    * {
+        min-width: 620px;
+    }
+
+    .mountain-right {
+        min-width: 64vw;
+    }
+
+    .mountain-left {
+        min-width: 95vw;
+        bottom: 165px;
+    }
+
+    .footer-links {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 420px) {
+    .mountain-left {
+        min-width: 65%;
+    }
+
+    .mountain-right {
+        min-width: 43%;
+    }
+}
+
+@media only screen and (min-height: 760px) {
+    .mountain-left {
+        bottom: 195px;
+    }
+
+    .mountain-right {
+        bottom: 175px;
     }
 }
 
 @media only screen and (min-height: 1000px) {
-    .sky {
-        height: 100%;
+    .mountain-left {
+        bottom: 395px;
+    }
+
+    .mountain-right {
+        bottom: 310px;
     }
 }
