@@ -7,10 +7,12 @@ const section = document.querySelector("section");
 const imgContainer = document.querySelector(".imgContainer");
 const opacity = document.querySelectorAll(".opacity");
 const border = document.querySelector(".border");
-const hamburger = document.querySelector(".hamburger-menu");
+const hamburger = document.querySelector(".hamburger");
+const navItems = document.querySelector(".nav-items");
 
 hamburger.addEventListener('click', () => {
-    console.log('hello');
+    hamburger.classList.toggle('is-active');
+    navItems.classList.toggle('is-active');
 })
 
 
