@@ -55,7 +55,7 @@ header::after {
 .mountain-right {
     position: absolute;
     bottom: 140px;
-    height: 25vh;
+    height: 28vh;
     width: 43vw;
     right: 0;
     z-index: 18;
@@ -98,7 +98,9 @@ nav .container {
 }
 
 .hamburger {
-    position: relative;
+    position: absolute;
+    top: 0.55rem;
+    right: 3.8rem;
     display: block;
     width: 35px;
     height: 35px;
@@ -132,10 +134,13 @@ nav .container {
 }
 
 .nav-items {
-    margin: 0;
-    position: relative;
+    margin: 0 2rem;
+    position: absolute;
+    top: 1.4rem;
+    right: 7rem;
     opacity: 0;
     transition: 0.6s ease-out;
+    text-transform: uppercase;
 }
 
 .nav-items.is-active {
@@ -143,9 +148,6 @@ nav .container {
     transition: 0.6s linear;
 }
 
-.nav-home {
-    margin-left: 35rem;
-}
 
 a {
     margin: 10px;
@@ -247,6 +249,19 @@ section .container > *{
 }
 
 @media only screen and (max-width: 620px) {
+    .mountain-right {
+        min-width: 64vw;
+    }
+
+    .mountain-left {
+        min-width: 95vw;
+        bottom: 165px;
+    }
+
+    .footer-links {
+        display: none;
+    }
+
     section .container {
         grid-template-columns: 1fr;
     }
@@ -262,24 +277,29 @@ section .container > *{
     .title {
         font-size: 1.2rem;
     }
-}
 
-@media only screen and (max-width: 620px) {
-    * {
-        min-width: 620px;
+    .about-container {
+        margin: 0 2rem;
+        width: 80%;
     }
 
-    .mountain-right {
-        min-width: 64vw;
+    .hamburger {
+        position: absolute;
+        top: 1.6rem;
+        width: 35px;
+        height: 35px;
     }
 
-    .mountain-left {
-        min-width: 95vw;
-        bottom: 165px;
+    .nav-items {
+        position: relative;
+        display: block;
+        right: 0.5rem;
+        top: 2.8rem;
+        text-align: right;
     }
 
-    .footer-links {
-        display: none;
+    .logo {
+        font-size: 1rem;
     }
 }
 
@@ -293,17 +313,17 @@ section .container > *{
     }
 }
 
-@media only screen and (min-height: 760px) {
+@media only screen and (min-height: 768px) {
     .mountain-left {
         bottom: 195px;
     }
 
     .mountain-right {
-        bottom: 175px;
+        bottom: 155px;
     }
 }
 
-@media only screen and (min-height: 1000px) {
+@media only screen and (min-height: 1080px) {
     .mountain-left {
         bottom: 395px;
     }
