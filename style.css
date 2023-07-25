@@ -47,7 +47,7 @@ header::after {
     position: absolute;
     bottom: 155px;
     width: 68vw;
-    height: 31vh;
+    height: 34vh;
     left: 0;
     z-index: 17;
 }
@@ -55,7 +55,7 @@ header::after {
 .mountain-right {
     position: absolute;
     bottom: 140px;
-    height: 28vh;
+    height: 30vh;
     width: 43vw;
     right: 0;
     z-index: 18;
