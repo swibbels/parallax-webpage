@@ -19,6 +19,8 @@
                      <ul>
                         <a href="#home"><li class="nav-link">Home</li></a>
                         <a href="#about"><li class="nav-link">About</li></a>
+                        <a href="#skills"><li class="nav-link">Skills</li></a>
+                        <a href="#projects"><li class="nav-link">Projects</li></a>
                         <a href="https://mailchi.mp/8b320ca0a28e/parallax-webpage"><li class="nav-link">Contact</li></a>
                     </ul>
                 </div>
@@ -28,7 +30,7 @@
             </div>
         </nav>
     </header>
-    <section class="home">
+    <section class="home" id="home">
             <div class="sky-box">
                 <h1 class="big-title translate">Shane Wibbelsman
                    <br>
@@ -45,36 +47,53 @@
         <div class="shadow"></div>
         <div class="container opacity">
             <div class="content">
-                    <h3 class="title">About
+                    <h3 class="title">About Me
                         <div class="border"></div>
                     </h3>
-                    <p class="text">Have you ever visited a webpage that appears to shift as you scroll? 
-                    That is known as the parallax scrolling effect. Parallax scrolling is a visual effect that makes 
-                    the background of a webpage appears to be stationary or move at a slower pace than the foreground of the page. 
-                     Doing so produces an optical illusion of depth, which adds to the user's experience.
+                    <p class="text">Hi, my name is <span>Shane Wibbelsman</span>, a self-taught front-end developer. A former blue-collar worker with
+                        a reputation of working hard and having excellent problem-solving skills. Check out my projects below to see what you're missing.
                     </p>
             </div>
             <div class="imgContainer opacity">
                 <img src="img/image2.jpg" alt="">
             </div>
         </div>
-        <section class="projects">
+        <section id="skills" class="skills">
+            <h1>Skills</h1>
+            <div class="skills-container">
+                <img class="react" src="./img/react.svg" alt="react svg">
+                <img class="html5" src="./img/html5.svg" alt="html5 svg">
+                <img class="css3" src="./img/css3.svg" alt="css3 svg">
+                <img class="bootstrap" src="./img/bootstrap.svg" alt="bootstrap svg">
+            </div>
+        </section>
+        <section id="projects" class="projects">
             <div class="project-container">
                 <div class="project1">
                     <h1 class="project-title">Robofriends</h1>
                     <img src="./img/robofriends.png" alt="robofriends homepage">
-                    <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa mollitia architecto eveniet nihil, ipsum, rem voluptas voluptatum eligendi provident vero aut quo. Doloremque recusandae eligendi labore amet iure quia.</p>
+                    <p class="project-text">
+                        A simple React app for searching through robots, showing their name and email address.
+                    </p>
+                    <a href="https://swibbels.github.io/robofriends/" target="_blank"><button>Live Site</button></a>
+                    <a href="https://github.com/swibbels/robofriends" target="_blank"><button>Source Code</button></a>
                 </div>
                 <div class="project2">
-                    <h1 class="project-title">CSS Background Generator</h1>
+                    <h1 class="project-title">Background Generator</h1>
                     <img src="./img/background.generator.png" alt="CSS background generator">
-                    <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa mollitia architecto eveniet nihil, ipsum, rem voluptas voluptatum eligendi provident vero aut quo. Doloremque recusandae eligendi labore amet iure quia.</p>
+                    <p class="project-text">
+                        A webpage designed to generate individual colors or a linear-gradient. After the user picks their color(s)
+                        the CSS code is shown below providing an easy way to integrate it to their own project.
+                    </p>
+                    <a href="https://swibbels.github.io/background.generator/" target="_blank"><button>Live Site</button></a>
+                    <a href="https://github.com/swibbels/background.generator" target="_blank"><button>Source Code</button></a>
                 </div>
             </div>
         </section>
+</body>
     <footer class="footer">
         <div class="footer-links">
-            <a href="" class="footer-home" #="footer-link">Home</a>
+            <a href="#home" class="footer-home" #="footer-link">Home</a>
             <a href="#about" class="nav-about" #="footer-link">About</a>
             <a href="https://mailchi.mp/8b320ca0a28e/parallax-webpage" class="nav-contact" #="footer-link">Contact</a>
         </div>
@@ -82,5 +101,4 @@
 
     <script src="app.js"></script>
 
-</body>
 </html>
