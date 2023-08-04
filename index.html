@@ -4,41 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax page</title>
+    <title>Shane Wibbelsman</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&family=Poppins:wght@300&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header id="home">
-        <nav>
-            <div class="container">
-                        <h3 class="logo">Shane<span>Wibbelsman</span></h3>
-                        <div class="nav-items">
-                            <a href="#home" class="nav-home">Home</a>
-                            <a href="#about" class="nav-about">About</a>
-                            <a href="https://mailchi.mp/8b320ca0a28e/parallax-webpage" class="nav-contact">Contact</a>
-                        </div>
-                            <div class="hamburger">
-                                <div class="bar">
-                    </div>
+        <nav class="main-nav">
+            <div class="logo"><img src="img/Shane Wibbelsman-logo/vector/logo-white1.svg"></div>
+                <div class="nav-items">
+                     <ul>
+                        <a href="#home"><li class="nav-link">Home</li></a>
+                        <a href="#about"><li class="nav-link">About</li></a>
+                        <a href="https://mailchi.mp/8b320ca0a28e/parallax-webpage"><li class="nav-link">Contact</li></a>
+                    </ul>
+                </div>
+                    <div class="hamburger">
+                        <div class="bar">
                 </div>
             </div>
         </nav>
-
-            <h1 class="big-title translate">Parallax</h1>
-
-        <img src="img/water.png" class="water translate" data-speed="0.12" alt="">
-        <img src="img/mountain-left.png" class="mountain-left translate" data-speed="0.25" alt="">
-        <img src="img/mountain-right.png" class="mountain-right translate" data-speed="0.3" alt="">
-        <img src="img/sky.png" class="sky translate" data-speed="0.3" alt="">
-
     </header>
-    
+    <section class="home">
+            <div class="sky-box">
+                <h1 class="big-title translate">Shane Wibbelsman
+                   <br>
+                    <span>Front-End Developer</span>
+                </h1>
+            </div>
+            <img src="img/sky.png" class="sky translate" data-speed="0.3" alt="">
+            <img src="./img/bottom-image.png" class="water translate" data-speed="0.12" alt=""> 
+            <div class="arrow-container">
+                <a href="about"><p class="arrow"></p></a> 
+            </div>
+    </section> 
     <section id="about" class="about-section">
         <div class="shadow"></div>
         <div class="container opacity">
@@ -46,22 +48,37 @@
                     <h3 class="title">About
                         <div class="border"></div>
                     </h3>
-                            <p class="text">Have you ever visited a webpage that appears to shift as you scroll? 
-                            That is known as the parallax scrolling effect. Parallax scrolling is a visual effect that makes 
-                            the background of a webpage appears to be stationary or move at a slower pace than the foreground of the page. 
-                            Doing so produces an optical illusion of depth, which adds to the user's experience.
-                        </p>
+                    <p class="text">Have you ever visited a webpage that appears to shift as you scroll? 
+                    That is known as the parallax scrolling effect. Parallax scrolling is a visual effect that makes 
+                    the background of a webpage appears to be stationary or move at a slower pace than the foreground of the page. 
+                     Doing so produces an optical illusion of depth, which adds to the user's experience.
+                    </p>
             </div>
             <div class="imgContainer opacity">
                 <img src="img/image2.jpg" alt="">
             </div>
         </div>
+        <section class="projects">
+            <div class="project-container">
+                <div class="project1">
+                    <h1 class="project-title">Robofriends</h1>
+                    <img src="./img/robofriends.png" alt="robofriends homepage">
+                    <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa mollitia architecto eveniet nihil, ipsum, rem voluptas voluptatum eligendi provident vero aut quo. Doloremque recusandae eligendi labore amet iure quia.</p>
+                </div>
+                <div class="project2">
+                    <h1 class="project-title">CSS Background Generator</h1>
+                    <img src="./img/background.generator.png" alt="CSS background generator">
+                    <p class="project-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos ipsa mollitia architecto eveniet nihil, ipsum, rem voluptas voluptatum eligendi provident vero aut quo. Doloremque recusandae eligendi labore amet iure quia.</p>
+                </div>
+            </div>
+        </section>
+    <footer class="footer">
         <div class="footer-links">
             <a href="" class="footer-home" #="footer-link">Home</a>
             <a href="#about" class="nav-about" #="footer-link">About</a>
             <a href="https://mailchi.mp/8b320ca0a28e/parallax-webpage" class="nav-contact" #="footer-link">Contact</a>
         </div>
-        </section>
+    </footer>
 
     <script src="app.js"></script>
 

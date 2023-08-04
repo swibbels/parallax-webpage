@@ -7,25 +7,20 @@
 
 body {
     font-family: 'Cinzel', serif;
-    background-color: #151515;
+    font-family: 'Poppins', sans-serif;
+    background: #575757;
 }
+/* NAV */
 
-.container {
-    max-width: 70rem;
-    padding: 0 2rem;
-    margin: 0 auto;
-}
 
 header {
+    margin: 0;
     width: 100%;
-    height: 100vh;
-    position: relative;
-    overflow: hidden;
+    background: linear-gradient(to top, #575757, #151515);
 }
 
 header::after {
     content: '';
-    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
@@ -34,74 +29,24 @@ header::after {
     z-index: 25;
 }
 
-.water {
-    position: absolute;
-    bottom: 0;
-    width: 100vw;
-    height: 29vh;
-    right: 0;
-    z-index: 19;
-}
-
-.mountain-left {
-    position: absolute;
-    bottom: 155px;
-    width: 68vw;
-    height: 34vh;
-    left: 0;
-    z-index: 17;
-}
-
-.mountain-right {
-    position: absolute;
-    bottom: 140px;
-    height: 30vh;
-    width: 43vw;
-    right: 0;
-    z-index: 18;
-}
-
-.sky {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    height: 74vh;
-    z-index: 16;
-}
-
-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 1rem 0;
-    z-index: 30;
-    background-color: linear-gradient(to bottom, rgba(0, 0, 0, 0.05), transparent);
-}
-
-nav .container {
+.main-nav {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    padding: 1rem;
+    background: none;
 }
 
 .logo {
-    color: #fff;
-    font-size: 1.1rem;
-    text-transform: uppercase;
-    font-weight: 600;
-    letter-spacing: 2px;
+    width: 100%;
+    padding-left: 10px;
 }
 
-.logo span {
-    font-weight: 400;
+.logo > img {
+    width: 23%;
 }
 
 .hamburger {
-    position: absolute;
-    top: 0.55rem;
-    right: 3.8rem;
-    display: block;
+    margin-bottom: 8px;
     width: 35px;
     height: 35px;
     background: none;
@@ -118,7 +63,7 @@ nav .container {
     height: 5px;
     background-color:#fff;
     margin: 6px 0;
-    transition: 0.6s;
+    transition: 0.4s;
 }
 
 .hamburger.is-active::after {
@@ -133,11 +78,16 @@ nav .container {
     opacity: 0;
 }
 
+ul {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    list-style: none;
+}
+
 .nav-items {
-    margin: 0 2rem;
-    position: absolute;
-    top: 1.4rem;
-    right: 7rem;
+    display: flex;
+    align-items: center;
     opacity: 0;
     transition: 0.6s ease-out;
     text-transform: uppercase;
@@ -156,39 +106,82 @@ a {
     cursor: default;
 }
 
-.footer-links {
-    margin-bottom: 3rem;
-    position:relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
+a:hover {
+    color: #757575;
+    transition: 0.2s;
 }
 
+/* BODY */
 
-a:hover {
-    color: #924bc4;
-    transition: 0.2s;
+.home {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+}
+
+.sky-box {
+    position: absolute;
+    top: 10rem;
+    width: 100%;
+}
+
+.sky {
+   width: 100%;
+   height: 68vh;
+}
+
+.water {
+    width: 100%;
+    height: 92vh;
+    bottom: 0;
+    position: absolute;
+    left: 0;
 }
 
 .big-title {
     position: absolute;
-    z-index: 30;
     line-height: 4rem;
-    top: calc(50% - 2rem);
+    top: 8rem;
     width: 100%;
     text-align: center;
     font-size: 5rem;
-    font-weight: 600;
-    color: #fff;
+    font-weight: 400;
+    color: #eeeeee;
+    z-index: 2;
 }
 
-section {
+.big-title span {
+    font-size: 3rem;
+    font-weight: 200;
+}
+
+.arrow-container {
+    position: absolute;
+    width: 100%;
+    height: 2vh;
+    background-color: none;
+    bottom: 5rem;
+}
+
+.arrow {
+    border: solid #eee;
+    border-width: 0 3px 3px 0;
+    margin: 0 auto;
+    padding: 1rem;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    width: 1rem;
+}
+
+
+.about-section {
     width: 100%;
     background-color: #151515;
     position: relative;
 }
 
-section .container {
+.about-section .container {
     padding: 3rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -197,11 +190,11 @@ section .container {
     min-height: 100vh;
 }
 
-section img {
+.about-section img {
     width: 100%;
 }
 
-section .container > *{
+.about-section .container > *{
     margin: 2rem;
 }
 
@@ -227,7 +220,7 @@ section .container > *{
 }
 
 .border {
-    position: absolute;
+    position: relative;
     width: 0;
     height: 3px;
     background-color: #fff;
@@ -240,7 +233,6 @@ section .container > *{
     bottom: 100%;
     height: 300px;
     width: 100%;
-    z-index: 20;
     background: linear-gradient(to top, #151515, transparent);
 }
 
@@ -248,87 +240,47 @@ section .container > *{
     opacity: 0;
 }
 
-@media only screen and (max-width: 620px) {
-    .mountain-right {
-        min-width: 64vw;
-    }
-
-    .mountain-left {
-        min-width: 95vw;
-        bottom: 165px;
-    }
-
-    .footer-links {
-        display: none;
-    }
-
-    section .container {
-        grid-template-columns: 1fr;
-    }
-    
-    .big-title {
-        font-size: 3rem;
-    }
-
-    .text {
-        font-size: 0.8rem;
-    }
-
-    .title {
-        font-size: 1.2rem;
-    }
-
-    .about-container {
-        margin: 0 2rem;
-        width: 80%;
-    }
-
-    .hamburger {
-        position: absolute;
-        top: 1.6rem;
-        width: 35px;
-        height: 35px;
-    }
-
-    .nav-items {
-        position: relative;
-        display: block;
-        right: 0.5rem;
-        top: 2.8rem;
-        text-align: right;
-    }
-
-    .logo {
-        font-size: 1rem;
-    }
+/* PROJECTS SECTION */
+.projects {
+    background: linear-gradient(to top, #575757, #151515);
 }
 
-@media only screen and (max-width: 420px) {
-    .mountain-left {
-        min-width: 65%;
-    }
-
-    .mountain-right {
-        min-width: 43%;
-    }
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    height: 50vh;
+    padding: 30px;
 }
 
-@media only screen and (min-height: 768px) {
-    .mountain-left {
-        bottom: 195px;
-    }
-
-    .mountain-right {
-        bottom: 155px;
-    }
+.project-title {
+    color: #eeeeee;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
-@media only screen and (min-height: 1080px) {
-    .mountain-left {
-        bottom: 395px;
-    }
-
-    .mountain-right {
-        bottom: 310px;
-    }
+.project-text {
+    color: #fff;
+    text-align: center;
 }
+
+/* FOOTER */
+.footer {
+    width: 100%;
+    height: 5vh;
+    background: #575757;
+}
+
+.footer-links {
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer-links a:hover {
+    color: #151515;
+}
+
+/* MEDIA QUERIES */
+
