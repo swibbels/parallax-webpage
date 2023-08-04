@@ -61,7 +61,7 @@ header::after {
     content:"";
     width: 100%;
     height: 5px;
-    background-color:#fff;
+    background-color:#cdcdcd;
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -102,7 +102,7 @@ ul {
 a {
     margin: 10px;
     text-decoration: none;
-    color: #fff;
+    color: #cdcdcd;
     cursor: default;
 }
 
@@ -147,7 +147,7 @@ a:hover {
     text-align: center;
     font-size: 5rem;
     font-weight: 400;
-    color: #eeeeee;
+    color: #eee;
     z-index: 2;
 }
 
@@ -199,12 +199,18 @@ a:hover {
 }
 
 .content {
-    color: #fff;
+    color: #cdcdcd;
     transform: translateY(-50px);
 }
 
 .text {
     text-indent: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.text span {
+    font-size: 1.8rem;
+    color: #4a9fc7;
 }
 
 .imgContainer {
@@ -223,7 +229,7 @@ a:hover {
     position: relative;
     width: 0;
     height: 3px;
-    background-color: #fff;
+    background-color: #cdcdcd;
     bottom: 0;
     left: 0;
 }
@@ -240,6 +246,35 @@ a:hover {
     opacity: 0;
 }
 
+/* SKILLS SECTION */
+.skills {
+    background: #575757;
+}
+
+.skills h1 {
+    text-align: center;
+    color: #cdcdcd;
+    text-transform: uppercase;
+    font-size: 1.7rem;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 20vh;
+    padding: 20px;
+}
+
+.skills-container > img {
+    background: none;
+    width: 100%;
+    height: 7rem;
+    padding: 10px;
+}
+
+
 /* PROJECTS SECTION */
 .projects {
     background: linear-gradient(to top, #575757, #151515);
@@ -247,21 +282,46 @@ a:hover {
 
 .project-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 30px;
-    height: 50vh;
+    height: 80vh;
     padding: 30px;
 }
 
 .project-title {
-    color: #eeeeee;
+    color: #cdcdcd;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
+    text-transform: uppercase;
 }
 
 .project-text {
-    color: #fff;
-    text-align: center;
+    color: #cdcdcd;
+    text-indent: 1.2rem;
+    font-size: 1.2rem;
+}
+
+.projects a {
+    font-size: 1.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.projects button {
+    border-radius: 20px;
+    width: 8rem;
+    height: 3rem;
+    border: solid #151515;
+    background: none;
+    text-transform: uppercase;
+    color: #cdcdcd;
+
+}
+
+button:hover {
+    color: #575757;
+    background: #151515;
 }
 
 /* FOOTER */
@@ -283,4 +343,21 @@ a:hover {
 }
 
 /* MEDIA QUERIES */
+@media only screen and (max-width: 680px) {
+    .big-title {
+        font-size: 3rem;
+    }
 
+    .text {
+        font-size: 0.8rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .about-container {
+        margin: 0 2rem;
+        width: 80%;
+    }
+}
