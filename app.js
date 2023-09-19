@@ -23,7 +23,6 @@ let aboutSetionHeight = aboutSetion.offsetHeight;
 window.addEventListener('scroll', () => {
     let scroll = window.pageYOffset;
     let aboutSetionY = aboutSetion.getBoundingClientRect();
-    console.log(aboutSetionY.top);
     
     translate.forEach(element => {
         let speed = element.dataset.speed;
@@ -31,7 +30,7 @@ window.addEventListener('scroll', () => {
     });
 
     opacity.forEach(element => {
-        element.style.opacity = scroll / (aboutSetionY.top + aboutSetionHeight);
+        element.style.opacity = scroll * 2.3 / (aboutSetionY.top + aboutSetionHeight);
     })
 
     bigTitle.style.opacity = -scroll / (headerHeight / 2) + 1;
