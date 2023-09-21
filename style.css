@@ -31,7 +31,9 @@ header::after {
 
 .main-nav {
     display: flex;
+    width: 100%;
     align-items: center;
+    justify-content: flex-end;
     padding: 1rem;
     background: none;
 }
@@ -42,13 +44,13 @@ header::after {
 }
 
 .logo > img {
-    width: 300px;
+    width: 250px;
 }
 
 .hamburger {
     margin-bottom: 8px;
-    width: 35px;
-    height: 35px;
+    min-width: 35px;
+    min-height: 35px;
     background: none;
     border: none;
     outline: none;
@@ -105,7 +107,7 @@ a {
     margin: 10px;
     text-decoration: none;
     color: #cdcdcd;
-    cursor: default;
+    cursor: pointer;
 }
 
 a:hover {
@@ -296,7 +298,7 @@ a:hover {
 .project-title {
     color: #cdcdcd;
     text-align: center;
-    font-size: 1.8rem;
+    font-size: 1.2rem;
     text-transform: uppercase;
 }
 
@@ -307,7 +309,7 @@ a:hover {
 .project-text {
     color: #cdcdcd;
     text-indent: 1.2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 .projects a {
@@ -342,10 +344,10 @@ button:hover {
 }
 
 .contact-container {
-        margin: 4rem auto;
-        max-width: 680px;
-        height: 450px;
-        background-color: #575757;
+    margin: 4rem auto;
+    max-width: 70%;
+    height: 450px;
+    background-color: #575757;
 }
 
 form {
@@ -408,7 +410,17 @@ form {
 }
 
 /* MEDIA QUERIES */
-@media only screen and (max-width: 680px) {
+@media only screen and (max-width: 850px) {
+    .project-title {
+        font-size: 1rem;
+    }
+
+    .project-text {
+        font-size: .8rem;
+    }
+}
+
+@media only screen and (max-width: 720px) {
     .big-title {
         font-size: 3rem;
     }
@@ -417,6 +429,7 @@ form {
         font-size: 2rem;
     }
 
+    
     .text {
         font-size: 0.8rem;
     }
@@ -428,5 +441,39 @@ form {
     .about-container {
         margin: 0 2rem;
         width: 80%;
+    }
+
+    .about-section .opacity {
+        grid-template-columns: 1fr;
+    }
+
+    .main-nav {
+        min-width: 100%;
+    }
+
+    .logo {
+        display:none;
+    }
+
+    .project-container {
+        grid-template-columns: 1fr;
+        padding: 5rem;
+        height: 20%;
+    }
+
+    .contact-container {
+        max-width: 70%;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .nav-items {
+        font-size: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .nav-items {
+        font-size: 0.5rem;
     }
 }
