@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    overflow-x: none;
 }
 
 body {
@@ -396,6 +397,13 @@ form {
     background-color: #757575;
     color: #151515;
     transition: ease 0.4s;
+}
+
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #cdcdcd;
 }
 
 .footer-links {
