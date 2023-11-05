@@ -235,7 +235,7 @@ a:hover {
     position: relative;
     width: 0;
     height: 3px;
-    background-color: #cdcdcd;
+    background-color: #4a9fc7;
     bottom: 0;
     left: 0;
 }
@@ -299,7 +299,7 @@ a:hover {
 .project-title {
     color: #cdcdcd;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     text-transform: uppercase;
 }
 
@@ -321,19 +321,24 @@ a:hover {
 }
 
 .projects button {
-    border-radius: 20px;
+    border-radius: 10px;
     width: 8rem;
     height: 3rem;
-    border: solid #151515;
-    background: none;
+    border: 2px solid #151515;
+    background: #4a9fc7;
     text-transform: uppercase;
-    color: #cdcdcd;
+    color: #151515;
+    box-shadow: 5px 4px 4px #151515;
+    font-family: "Poppins", sans-serif;
+    font-weight: 800;
 
 }
 
 button:hover {
-    color: #575757;
+    color: #4a9fc7;
     background: #151515;
+    border: 2px solid #4a9fc7;
+    transition: 0.2s ease;
 }
 
 /* FOOTER */
@@ -362,6 +367,7 @@ form {
     background: rgba(0, 0, 0, 0.32);
     text-align: center;
     padding: 10px 0;
+    box-shadow: 10px 5px 5px #151515;
 }
 
 .contact-container input {
@@ -376,6 +382,7 @@ form {
     padding: 0;
     margin: 0;
     font-size: 1.3rem;
+    font-family: 'Poppins', sans-serif;
 }
 
 .contact-container textarea {
@@ -386,9 +393,10 @@ form {
 .contact-container button {
     width: 25%;
     height: 1.5rem;
+    font-family: 'Poppins', sans-serif;
     background-color: #151515;
     color: #757575;
-    border: 1px solid #757575;
+    border: 2px solid #757575;
     border-radius: 4px;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
 }
